@@ -1,0 +1,48 @@
+﻿.contact {
+    &__body {
+        position: relative;
+        padding-bottom: 7rem;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__content {
+        padding-top: 6rem;
+        padding-inline: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: var(--text-color);
+        & p {
+            font-size: var(--medium-font-size);
+            padding-bottom: 2.5rem;
+        }
+    }
+    &__title {
+        font-size: var(--h2-font-size);
+        font-weight: var(--fw-bold);
+        line-height: 3rem;
+        padding-bottom: 1rem;
+        & span {
+            color: var(--first-color);
+        }
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline: 2rem;
+        gap: 1.75rem;
+        & input {
+            max-width: 210px;
+            width: 100%;
+            padding: .615rem 1.5rem;
+            background-color: var(--text-color);
+            border: 1px solid;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+﻿.footer {
+    &__container {
+        position: relative;
+    }
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__body {
+        position: relative;
+        padding-inline: 1.5rem;
+        padding-block: 3rem;
+        color: var(--text-color);
+    }
+}
+.top-footer {
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        padding-bottom: 1.25rem;
+        border-bottom: 0.25rem solid;
+        & span {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        & span > a {
+            color: var(--text-color);
+            font-weight: var(--fw-bold);
+            font-size: var(--medium-font-size);
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        gap:2rem;
+        padding-top: 2rem;
+    }
+    &__list {
+        max-width: 12rem;
+        & h4 {
+            font-weight: var(--fw-bold);
+            font-size: var(--medium-font-size);
+        }
+        & li {
+            margin-block: .5rem;
+        }
+        & li > a {
+            color: var(--text-color);
+            font-size: var(--medium-font-size);
+            // font-weight: var(--fw-bold);
+            line-height: 1;
+        }
+    }
+    &__contacts {
+        display: grid;
+        gap: 1rem;
+    }
+    &__phone {
+        display: grid;
+        & h4 {
+            font-weight: var(--fw-bold);
+            font-size: var(--medium-font-size);
+        }
+        & a{
+            color: var(--text-color);
+            font-weight: var(--fw-bold);
+            font-size: var(--medium-font-size);
+        }
+    }
+    &__follow {
+        display: grid;
+    }
+    &__social {
+        display: flex;
+        gap: 2rem;
+        & a {
+            margin-top: .5rem;
+            font-size: 2rem;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: var( --first-color);
+            }
+        }
+    }
+}

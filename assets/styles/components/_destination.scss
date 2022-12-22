@@ -1,0 +1,37 @@
+﻿.destination {
+    // &__button {
+    // }
+    &__items {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%,14rem),1fr));
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        min-height: 14.0625rem;
+        align-items: flex-end;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5625rem;
+    }
+    &__content {
+        position: relative;
+        display: flex;
+        bottom: 5%;
+        left: 5%;
+        gap: 1rem;
+        align-items: center;
+        padding: 1.5rem;
+        & h2 {
+            font-weight: var(--fw-bold);
+            text-transform: uppercase;
+            font-size: var(--h3-font-size);
+            color: var(--text-color);
+        }
+    }
+}

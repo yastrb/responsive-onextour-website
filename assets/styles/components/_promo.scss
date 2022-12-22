@@ -1,0 +1,9 @@
+﻿.promo {
+    &__items {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem),1fr));
+        gap: 2rem;
+        cursor: pointer;
+    }
+}
